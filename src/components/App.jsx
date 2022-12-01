@@ -1,13 +1,14 @@
-import { Profile } from "./user/user";
-import { StatisticsList } from "./statistics/statisticsList";
-import { FriendsList } from './friends/friendList';
-import { TransactionHistory } from "./transactionHistory/transactionHistory";
-import { GlobalStyle } from "./GlobalStyles";
+import { Profile } from "./User/User";
+import { StatisticsList } from "./Statistics/StatisticsList";
+import { FriendsList } from './Friends/FriendList';
+import { TransactionHistory } from "./TransactionHistory/TransactionHistory";
+
 
 import data from '../data';
 import user from '../user';
 import friends from '../friends';
 import transaction from '../transactions';
+import { GlobalStyle, Container} from "./GlobalStyles";
 
 
 
