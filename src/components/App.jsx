@@ -8,7 +8,7 @@ import data from '../data';
 import user from '../user';
 import friends from '../friends';
 import transaction from '../transactions';
-import { GlobalStyle} from "./GlobalStyles";
+import { GlobalStyle, Container} from "./GlobalStyles";
 
 
 
