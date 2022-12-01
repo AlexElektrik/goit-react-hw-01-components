@@ -1,7 +1,7 @@
 import { Container } from 'components/User/User.styled';
 import { Statistics } from './StatisticsItem';
 import PropTypes from 'prop-types';
-import { StatList, Item, StatisticsTitle } from './StatisticsList.styled';
+import { StatList, StatisticsTitle } from './StatisticsList.styled';
 
 
 export const StatisticsList = ({ statistics }) => {
