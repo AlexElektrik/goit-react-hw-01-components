@@ -1,19 +1,19 @@
 import { Container } from 'components/User/User.styled';
-import { Statistics } from './StatisticsItem';
+import { Statistics } from './StatistigItem/StatisticsItem';
 import PropTypes from 'prop-types';
-import { StatList, StatisticsTitle } from './StatisticsList.styled';
+import {StatisticsTitle, StatList, Item } from './StatisticsList.styled';
 
 
-export const StatisticsList = ({ statistics }) => {
+export const StatisticsList = ({title, statistics }) => {
   return (
    <Container>
-    <section className="statistics">
-    <StatisticsTitle className="title">Upload stats</StatisticsTitle>
+      <section className="statistics">
+         { title && (<StatisticsTitle>  Upload stats</StatisticsTitle>)}
       <StatList className="stat-list">
         {statistics.map( statistic => (
-          <li  className="item" key={statistic.id}>
+          <Item  className="{statistic.id}" key={statistic.id}>
             <Statistics statistic = {statistic} />
-          </li>
+          </Item>
         ))}
       </StatList>
       </section>

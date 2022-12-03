@@ -16,5 +16,22 @@ export const UserName = styled.p`
 export const StatusList = styled.ul`
     list-style: none;
     display: flex;
-    gap: 8px;
+    
+
+`
+export const Item = styled.li`
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid #7daaae;
+`
+export const Quantity = styled.span`
+    margin: 0 auto;
+`
+export const Label = styled.span`
+  font-weight: 500 ;
+`
+export const Tag = styled.p`
+    color: #9dce73
 `

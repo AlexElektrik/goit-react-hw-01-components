@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import {Container, Description, UserName, StatusList} from './User.styled'
+import {Container, Description, UserName, StatusList, Item, Quantity, Label, Tag} from './User.styled'
 
 export const Profile = ({ profile: { username, tag, location, avatar, stats } }) => {
   return (
@@ -15,23 +15,23 @@ export const Profile = ({ profile: { username, tag, location, avatar, stats } })
            />
           <div>
             <UserName className="name"> {username} </UserName>
-            <p className="tag"> @{tag} </p>
+            <Tag className="tag"> @{tag} </Tag>
             <p className="location"> {location} </p>
           </div>
         </Description>
         <StatusList className="stats">
-          <li>
-            <span className="label">Followers </span>
-            <span className="quantity">{stats.followers}</span>
-          </li>
-          <li>
-            <span className="label">Views </span>
-            <span className="quantity"> {stats.views}</span>
-          </li>
-          <li>
-            <span className="label">Likes </span>
-            <span className="quantity">{stats.likes}</span>
-          </li>
+          <Item>
+            <Label className="label">Followers </Label>
+            <Quantity className="quantity">{stats.followers}</Quantity>
+          </Item>
+          <Item>
+            <Label className="label">Views </Label>
+            <Quantity className="quantity"> {stats.views}</Quantity>
+          </Item>
+          <Item>
+            <Label className="label">Likes </Label>
+            <Quantity className="quantity">{stats.likes}</Quantity>
+          </Item>
        </StatusList> 
       </Container>
     </section>

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { StatisticsItem } from './StatisticsList.styled';
+import { StatisticsItem } from './StatisticsItem.styled';
 
 export const Statistics = ({ statistic: { label, percentage } }) => {
   return (
