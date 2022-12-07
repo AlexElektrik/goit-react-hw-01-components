@@ -4,10 +4,10 @@ import { FriendsList } from './Friends/Friends';
 import { TransactionHistory } from "./Transaction/Transaction";
 import { GlobalStyle} from "./GlobalStyles";
 
-import data from '../data';
-import user from '../user';
-import friends from '../friends';
-import transaction from '../transactions';
+import data from './data/data';
+import user from './data/user';
+import friends from './data/friends';
+import transaction from './data/transactions';
 
 
 

@@ -26,7 +26,7 @@ export const TransactionHistory = ({ items }) => {
     )
 };
 
-TransactionHistory.propType = {
+TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
