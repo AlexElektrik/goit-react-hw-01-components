@@ -1,5 +1,5 @@
 import { Container } from 'components/User/User.styled';
-import { Statistics } from './StatistigItem/StatisticsItem';
+import { StatisticsItem } from './StatistigItem/StatisticsItem';
 import PropTypes from 'prop-types';
 import {StatisticsTitle, StatList, Item } from './StatisticsList.styled';
 
@@ -7,12 +7,12 @@ import {StatisticsTitle, StatList, Item } from './StatisticsList.styled';
 export const StatisticsList = ({title, statistics }) => {
   return (
    <Container>
-      <section className="statistics">
+      <section>
         {title && (<StatisticsTitle>  {title} </StatisticsTitle>)}
-      <StatList className="stat-list">
+      <StatList>
         {statistics.map( statistic => (
-          <Item  className="{statistic.id}" key={statistic.id}>
-            <Statistics statistic = {statistic} />
+          <Item  statisticId="{statistic.id}" key={statistic.id}>
+            <StatisticsItem statistic = {statistic} />
           </Item>
         ))}
       </StatList>

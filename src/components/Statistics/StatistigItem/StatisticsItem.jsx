@@ -1,18 +1,18 @@
 import PropTypes from 'prop-types';
-import { StatisticsItem } from './StatisticsItem.styled';
+import { Item } from './StatisticsItem.styled';
 
-export const Statistics = ({ statistic: { label, percentage } }) => {
+export const StatisticsItem = ({ statistic: { label, percentage } }) => {
   return (
     <>
-      <StatisticsItem>    
-        <span className="label"> {label} </span>
-        <span className="percentage"> {percentage}% </span>
-      </StatisticsItem>
+      <Item>    
+        <span> {label} </span>
+        <span> {percentage}% </span>
+      </Item>
     </>
       )
 };
 
-Statistics.propTypes = {
+StatisticsItem.propTypes = {
   statistic: PropTypes.shape({
       label: PropTypes.string.isRequired,
       percentage: PropTypes.number.isRequired,

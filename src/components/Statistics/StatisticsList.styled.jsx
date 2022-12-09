@@ -10,7 +10,7 @@ export const StatList = styled.ul`
 
 `  
 export const Item = styled.li`
-  background-color: ${ props => {
+  background-color: ${props => {
     return `#${(Math.floor(Math.random() * 16777215).toString(16))}`
 
 }};
